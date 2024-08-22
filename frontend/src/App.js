@@ -1,7 +1,7 @@
 import umdlogo from './UMDLOGO.png';
 import './App.css';
 import dataanalystlogo from './Data-Analyst-Logo.jpg'
-import { Link } from 'react-router-dom';
+import cyberseclogo from './Cyber-Security-Analyst.jpg'
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         </p>
         <button
           className="App-link"
-          onclick={() => window.open("https://www.testudo.umd.edu/", '_blank')}
+          onClick={() => window.open("https://www.testudo.umd.edu/", '_blank')}
           rel="noopener noreferrer"
         >
           Open UMD Testudo
@@ -32,13 +32,20 @@ function App() {
         </a>
         <p className="Data-Analyst-Caption">Data Analyst Career Path</p>
         <header className='Data-Analyst-Courses'>
-          <Link to="/DataAnalyst" className='LinkButton'>
           <h4>View Recommended Courses</h4>
-          </Link>
         </header>
         </div>
         
       </header>
+      <div className='Cyber-Security'>
+        <a href='https://www.neit.edu/blog/what-does-a-cyber-security-analyst-do' className='Cyber-Security-Interactive' target='_blank'>
+          <img src={cyberseclogo} alt='cyber-security' />
+        </a>
+        <p className='Cybersec-caption'>Cyber Security Analyst</p>
+        <header className='Cyber-Analyst-Courses'>
+          <h4>View Recommended Courses</h4>
+        </header>
+      </div>
     </div>
     
   );

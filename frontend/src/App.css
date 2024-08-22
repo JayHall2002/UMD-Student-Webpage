@@ -96,3 +96,46 @@
 .Data-Analyst-Caption {
   color: rgb(241, 129, 129);
 }
+
+/* Cyber-Security container styling */
+.Cyber-Security {
+  margin: 20px auto; /* Center align with margin */
+  text-align: center; /* Center align text */
+}
+
+/* Cyber-Security image styling */
+.Cyber-Security img {
+  width: 20%; /* Adjust width to match other images */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure image is contained within its dimensions */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for Cyber-Security image */
+.Cyber-Security-Interactive:hover img {
+  transform: scale(1.2); /* Scale up the image on hover */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Cyber-Security caption styling */
+.Cybersec-caption {
+  color: rgb(241, 129, 129); /* Matching caption color */
+  margin-top: 5px; /* Space between image and caption */
+}
+
+.Cyber-Analyst-Courses {
+  display: inline-block; /* Ensures the anchor behaves like an inline element */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  color: #eca5a5;
+}
+
+.Cyber-Analyst-Courses {
+  display: block; /* Removes extra space below the image */
+  width: 100%; /* Ensure the image fits within its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.Cyber-Analyst-Courses:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
