@@ -1,7 +1,8 @@
 import umdlogo from './UMDLOGO.png';
 import './App.css';
 import dataanalystlogo from './Data-Analyst-Logo.jpg'
- 
+import { Link } from 'react-router-dom';
+
 function App() {
   return (
     <div className="App">
@@ -31,8 +32,9 @@ function App() {
         </a>
         <p className="Data-Analyst-Caption">Data Analyst Career Path</p>
         <header className='Data-Analyst-Courses'>
-          
+          <Link to="/DataAnalyst" className='LinkButton'>
           <h4>View Recommended Courses</h4>
+          </Link>
         </header>
         </div>
         
