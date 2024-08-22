@@ -3,29 +3,58 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 30vmin;
+  align-self: center;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 60s linear;
   }
 }
-
+.Data-Analyst{
+ width: 20%;
+ height: auto;
+ object-fit: contain;
+ margin: 20px auto;
+}
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #fffefe;
+  min-height: 100xvh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items:center;
+  justify-content:center;
+  font-size: calc(9px + 1vmin);
+  color: rgb(9, 8, 8);
 }
-
+.App-Subheader {
+  color: rgb(241, 129, 129);
+  text-shadow: 0px 2px 1px rgba(0,0,0,0.5); 
+}
+.Guidance-Instruction{
+  color: rgb(241, 129, 129);
+  text-align: center;
+  text-shadow: 1px 2px .5px rgba(0,0,0,0.5);
+}
 .App-link {
-  color: #61dafb;
+  background-color: #eca5a5; /* Button background color */
+  color: white; /* Text color */
+  width: 100px; /* Set the width of the button */
+  height: 100px; /* Set the height of the button */
+  border: none; /* Remove default border */
+  border-radius: 50%; /* Make it circular */
+  font-size: 1rem; /* Adjust font size */
+  cursor: pointer; /* Change cursor to pointer when hovering */
+  display: flex; /* Align text to center */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+}
+.App-link:hover {
+  background-color: #c48989; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly grow on hover */
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +64,35 @@
   to {
     transform: rotate(360deg);
   }
+}
+.Data-Analyst-Interactive {
+  display: inline-block; /* Ensures the anchor behaves like an inline element */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.Data-Analyst-Interactive img {
+  display: block; /* Removes extra space below the image */
+  width: 100%; /* Ensure the image fits within its container */
+  height: auto; /* Maintain aspect ratio */
+}
+.Data-Analyst-Interactive:hover img {
+  transform: scale(1.2); /* Scale up the image on hover */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+.Data-Analyst-Courses {
+  display: inline-block; /* Ensures the anchor behaves like an inline element */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  color: #eca5a5;
+} 
+.Data-Analyst-Courses {
+  display: block; /* Removes extra space below the image */
+  width: 100%; /* Ensure the image fits within its container */
+  height: auto; /* Maintain aspect ratio */
+}
+.Data-Analyst-Courses:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.Data-Analyst-Caption {
+  color: rgb(241, 129, 129);
 }
